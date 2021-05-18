@@ -18,14 +18,13 @@
     <MainHeader class="sticky-top"></MainHeader>
     <Nuxt />
     <MainFooter></MainFooter>
-    <MobileNav></MobileNav>
   </div>
 </template>
 
 <script>
   import MainHeader from '../components/Header.vue'
   import MainFooter from '../components/Footer.vue'
-  import MobileNav from '../components/MobileNav.vue'
+  
   import { TruckIcon, HelpCircleIcon, CreditCardIcon } from 'vue-feather-icons'
 
 export default {
@@ -35,7 +34,6 @@ export default {
   components: {
     MainHeader,
     MainFooter,
-    MobileNav,
     TruckIcon,
     HelpCircleIcon,
     CreditCardIcon
@@ -51,4 +49,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 </style>

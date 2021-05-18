@@ -6,21 +6,44 @@
 					<div class="col-12">
 						<Breadcrumbs class="mb-3"></Breadcrumbs>
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-lg-2">
 						<aside id="sidebar-widget" class="sidebar_widget pr-3">
-                <div class="title">
+                <div class="title sticky-top">
                     <h4 class="text-muted p-3">Filter</h4>
-                    <a href="#" class="btn btn-lg text-muted" id="closeFilter"><i class="fas fa-times"></i></a> 
+                    <button type="button" class="btn btn-lg text-muted" id="closeFilter"><x-icon size="2x" class=""></x-icon></button> 
                 </div>
                 <div class="widget_inner">
-                    <div class="widget_list">
-                        <h3 data-toggle="collapse" data-target="#group-1">
-                            Filter Harga
+                		<div class="widget_list">
+                        <h3 data-toggle="collapse" data-target="#group-0">
+                            KATEGORI
                             <chevron-down-icon size="1.5x" class="parent-collapsed text-muted"></chevron-down-icon>
                             <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
                         </h3>
-                        <div id="group-1" class="list-group mb-3 collapse in show">
-                            <RangeSlider v-model="example2.value" v-bind="example2"></RangeSlider>
+                        <div id="group-0 vertical-menu" class="list-group mb-3 collapse in show">
+                            <ul>
+                                <li>
+                                    <a href="#">Susu  <span>(6)</span></a> 
+                                </li>
+                                <li>
+                                    <a href="#">Mainan Anak <span>(8)</span></a> 
+                                </li>
+                                <li>
+                                    <a href="#">Baju Bayi <span>(10)</span></a> 
+                                </li>
+                                <li>
+                                    <a href="#">Perlengkapan Bayi <span>(6)</span></a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget_list">
+                        <h3 data-toggle="collapse" data-target="#group-1">
+                            HARGA
+                            <chevron-down-icon size="1.5x" class="parent-collapsed text-muted"></chevron-down-icon>
+                            <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
+                        </h3>
+                        <div id="group-1" class="list-group mb-3 collapse in show" style="overflow: visible;">
+                            <range-slider v-model="range" v-bind="price" class="mt-4"></range-slider>
                         </div>
                     </div>
                     <div class="widget_list">
@@ -30,114 +53,127 @@
                             <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
                         </h3>
                         <div id="group-2" class="list-group mb-3 collapse in show">
-                            <ul>
-                                <li>
-                                    <a href="#">Black  <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Blue <span>(8)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Brown <span>(10)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Green <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Pink <span>(4)</span></a> 
-                                </li>
-                            </ul>
+                        	<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand1">
+													  <label class="form-check-label" for="checkbrand1">
+													    4moms <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand2">
+													  <label class="form-check-label" for="checkbrand2">
+													    59S UVC LED <span>(12)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand3">
+													  <label class="form-check-label" for="checkbrand3">
+													    Abe Food <span>(10)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand4">
+													  <label class="form-check-label" for="checkbrand4">
+													    Abon Baby Gold <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand5">
+													  <label class="form-check-label" for="checkbrand5">
+													    4moms <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand6">
+													  <label class="form-check-label" for="checkbrand6">
+													    59S UVC LED <span>(12)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand7">
+													  <label class="form-check-label" for="checkbrand7">
+													    Abe Food <span>(10)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand8">
+													  <label class="form-check-label" for="checkbrand8">
+													    Abon Baby Gold <span>(1)</span>
+													  </label>
+													</div>
                         </div>
                     </div>
                     <div class="widget_list">
                         <h3 data-toggle="collapse" data-target="#group-3">
-                            SISTEM OPERASI
+                            FILTER KATEGORI
                             <chevron-down-icon size="1.5x" class="parent-collapsed text-muted"></chevron-down-icon>
                             <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
                         </h3>
                         <div id="group-3" class="list-group mb-3 collapse in show">
-                            <ul>
-                                <li>
-                                    <a href="#">Black  <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Blue <span>(8)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Brown <span>(10)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Green <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Pink <span>(4)</span></a> 
-                                </li>
-                            </ul>
+                          <div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand1">
+													  <label class="form-check-label" for="checkbrand1">
+													    4moms <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand2">
+													  <label class="form-check-label" for="checkbrand2">
+													    59S UVC LED <span>(12)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand3">
+													  <label class="form-check-label" for="checkbrand3">
+													    Abe Food <span>(10)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand4">
+													  <label class="form-check-label" for="checkbrand4">
+													    Abon Baby Gold <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand5">
+													  <label class="form-check-label" for="checkbrand5">
+													    4moms <span>(1)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand6">
+													  <label class="form-check-label" for="checkbrand6">
+													    59S UVC LED <span>(12)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand7">
+													  <label class="form-check-label" for="checkbrand7">
+													    Abe Food <span>(10)</span>
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="checkbrand8">
+													  <label class="form-check-label" for="checkbrand8">
+													    Abon Baby Gold <span>(1)</span>
+													  </label>
+													</div>
                         </div>
                     </div>
-                    <div class="widget_list">
-                        <h3 data-toggle="collapse" data-target="#group-4">
-                            UKURAN LAYAR
-                            <chevron-down-icon size="1.5x" class="parent-collapsed text-muted"></chevron-down-icon>
-                            <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
-                        </h3>
-                        <div id="group-4" class="list-group mb-3 collapse in show">
-                            <ul>
-                                <li>
-                                    <a href="#">Black  <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Blue <span>(8)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Brown <span>(10)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Green <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Pink <span>(4)</span></a> 
-                                </li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="widget_list">
-                        <h3 data-toggle="collapse" data-target="#group-5">
-                            LAYAR
-                            <chevron-down-icon size="1.5x" class="parent-collapsed text-muted"></chevron-down-icon>
-                            <chevron-up-icon size="1.5x" class="parent-expanded text-muted"></chevron-up-icon>
-                        </h3>
-                        <div id="group-5" class="list-group mb-3 collapse in show">
-                            <ul>
-                                <li>
-                                    <a href="#">Black  <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Blue <span>(8)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Brown <span>(10)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#"> Green <span>(6)</span></a> 
-                                </li>
-                                <li>
-                                    <a href="#">Pink <span>(4)</span></a> 
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="d-grid">
+		                	<button type="button" class="btn btn-success my-3">Submit</button>
+		                </div>
                 </div>
             </aside>
 					</div>
-					<div class="col-12 col-lg-9">
+					<div class="col-12 col-lg-10">
 						<h1 class="mb-3">Mainan Anak</h1>
 						<BannerCarousel></BannerCarousel>
 						<div class="product-list">
-							<div class="mc-toolbar">
+							<div class="mc-toolbar sticky-top">
 								<div class="display">
-									<a href="#" class="active"><grid-icon size="2x" class=""></grid-icon></a>
-									<a href="#"><list-icon size="2x" class=""></list-icon></a>
+									<button id="grid" class="active"><grid-icon size="2x" class=""></grid-icon></button>
+									<button id="list" ><list-icon size="2x" class=""></list-icon></button>
 								</div>
 								<div class="toolbar">
 									<div class="amount">( Menampilkan 1-12 dari 594 Produk )</div>
@@ -386,13 +422,27 @@
 				</div>
 			</div>
 		</section>
+		<!-- mobile menu -->
+		<nav class="navbar-bottom d-block d-sm-none">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6">
+						<button type="button" class="botNav" id="filterBtn"><filter-icon size="1x" class=""></filter-icon> <span>Filter</span></button>
+					</div>
+					<div class="col-6">
+						<button type="button" class="botNav" id="sortingBtn"><sliders-icon size="1x" class=""></sliders-icon> <span>Urutkan</span></button>
+					</div>
+				</div>
+			</div>
+		</nav>
 	</div>
 </template>
 
 <script>
-	import BannerCarousel from '../components/BannerCarousel.vue'
-	import RangeSlider from '@vueform/slider'
-	import { GridIcon, ListIcon, StarIcon, ChevronDownIcon, ChevronUpIcon } from 'vue-feather-icons'
+
+import BannerCarousel from '../components/BannerCarousel.vue'
+import { GridIcon, ListIcon, StarIcon, ChevronDownIcon, ChevronUpIcon, FilterIcon, SlidersIcon, XIcon } from 'vue-feather-icons'
+import RangeSlider from '@vueform/slider/dist/slider.vue2.js'
 
 export default {
 
@@ -405,25 +455,65 @@ export default {
   	StarIcon,
   	ChevronDownIcon, 
   	ChevronUpIcon,
-  	RangeSlider
+  	RangeSlider,
+  	FilterIcon, 
+  	SlidersIcon,
+  	XIcon
+  },
+
+  mounted () {
+  	$('#list').on("click", function(event){
+  		event.preventDefault();
+  		$('.mc-product .card-group').addClass('list-grid');
+  		$('#grid').removeClass('active');
+  		$('#list').addClass('active');
+  	});
+    $('#grid').on("click", function(event){
+    	event.preventDefault();
+    	$('.mc-product .card-group').removeClass('list-grid');
+    	$('#grid').addClass('active');
+    	$('#list').removeClass('active');
+  	});
+  	$("#filterBtn").on('click', function(event) {
+      document.getElementById("sidebar-widget").style.display="block";
+      console.log('sadassa');
+    });
+
+    $("#sortingBtn").on('click', function(event) {
+      document.getElementById("sorting-mobile").style.display="block";
+    });
+
+    $("#closeFilter").on('click', function(event) {
+      document.getElementById("sidebar-widget").style.display="none";
+    });
+
+    $("#closeSorting").on('click', function(event) {
+      document.getElementById("sorting-mobile").style.display="none";
+    });
   },
 
   data () {
-	return {
-		example2: {
-      value: [20, 40]
-    },
+		return {
+			price:{
+				format:{
+					prefix:'Rp',
+					thousand:'.'
+				},
+				max:400000000,
+			},
+			range: [0, 400000000]
+	  }
 	}
-  }
 }
 </script>
 
 <style lang="scss" scoped>
+
 .mc-product {
 
 	.card-group {
     display: grid;
-    grid-template-columns: repeat(5, minmax(170px, 1fr));
+    grid-template-columns: repeat(6, minmax(170px, 1fr));
     grid-gap: .5rem;
 
     .card{
@@ -483,6 +573,39 @@ export default {
 				img{
 					height: 18px;
 					width: auto;
+				}
+			}
+		}
+	}
+
+	.list-grid{
+		grid-template-columns: repeat(1, minmax(170px, 1fr))!important;
+
+		.card{
+			flex-direction: row;
+
+			.label-disc{
+		    left: 10px;
+			}
+
+			.ratio{
+		    width: 20%;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.mc-product {
+
+		.card-group {
+			grid-template-columns: repeat(2, minmax(170px, 1fr));
+		}
+
+		.list-grid{
+			.card{
+				.ratio{
+			    width: 500px;
+    			height: 150px;
 				}
 			}
 		}

@@ -509,12 +509,14 @@
 				</VCarousel>
 			</div>
 		</section>
+		<MobileNav></MobileNav>
   </div>
 </template>
 
 <script>
 	import VCarousel from 'vue-slick-carousel'
 	import { StarIcon } from 'vue-feather-icons'
+	import MobileNav from '../components/MobileNav.vue'
 	import BannerCarousel from '../components/BannerCarousel.vue'
 
 export default {
@@ -525,7 +527,8 @@ export default {
   components: { 
 		VCarousel,
 		StarIcon,
-		BannerCarousel 
+		BannerCarousel,
+		MobileNav 
   },
 
   data () {

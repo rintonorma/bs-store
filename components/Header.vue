@@ -44,9 +44,9 @@
                 </div>
               </span>
               <span class="position-relative">
-                <a href="#" title="" class="btn cartBtn" id="cart">
+                <button type="button" class="btn cartBtn" id="cart">
                     <shopping-cart-icon size="1.5x" class=""></shopping-cart-icon><span class="badge bg-danger position-absolute">3</span>
-                </a>
+                </button>
                 <!-- Shopping Cart -->
                 <div class="shopping-cart" style="display: none;">
                   <div class="">
