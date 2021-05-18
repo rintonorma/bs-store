@@ -1,0 +1,27 @@
+{
+  "name": "bs-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.23.4",
+    "@popperjs/core": "^2.9.2",
+    "@vueform/slider": "^1.0.5",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.9.1",
+    "jquery": "^3.6.0",
+    "nuxt": "^2.15.3",
+    "popper.js": "^1.16.1",
+    "sass": "^1.32.12",
+    "sass-loader": "10",
+    "vue-feather-icons": "^5.1.0",
+    "vue-popperjs": "^2.3.0",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {}
+}
