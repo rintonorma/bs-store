@@ -5,10 +5,10 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-6">
-						<a href="" title="" class="botNav active"><home-icon size="1x" class=""></home-icon> <span>Beranda</span></a>
+						<nuxt-link to="/" title="" id="homeLink" class="botNav active"><home-icon size="1x" class=""></home-icon> <span>Beranda</span></nuxt-link>
 					</div>
 					<div class="col-6">
-						<a href="" title="" class="botNav"><user-icon size="1x" class=""></user-icon> <span>Akun</span></a>
+						<nuxt-link to="/account" title="" id="accountLink" class="botNav"><user-icon size="1x" class=""></user-icon> <span>Akun</span></nuxt-link>
 					</div>
 				</div>
 			</div>
@@ -17,21 +17,35 @@
 </template>
 
 <script>
-	import { UserIcon, HomeIcon } from 'vue-feather-icons'
+import { UserIcon, HomeIcon } from 'vue-feather-icons'
+
 export default {
 
   name: 'MobileNav',
 
   components: {
-    UserIcon,
-    HomeIcon
+		UserIcon,
+		HomeIcon
 
   },
 
-  data () {
-	return {
+  mounted (){
+		$('#homeLink').on("click", function(event){
+			event.preventDefault();
+			$('#homeLink').addClass('active');
+			$('#accountLink').removeClass('active');
+		});
+		$('#accountLink').on("click", function(event){
+			event.preventDefault();
+			$('#accountLink').addClass('active');
+			$('#homeLink').removeClass('active');
+		});
+  },
 
-	}
+  data () {
+		return {
+
+		}
   }
 }
 </script>

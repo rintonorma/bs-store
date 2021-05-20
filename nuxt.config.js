@@ -35,6 +35,7 @@ export default {
   css: [
     '@/assets/css/main.css',
     '@/assets/css/default.scss',
+    '@/assets/css/vue-datetime.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

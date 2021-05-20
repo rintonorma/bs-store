@@ -4657,6 +4657,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+luxon@^1.27.0:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.27.0.tgz#ae10c69113d85dab8f15f5e8390d0cbeddf4f00f"
+  integrity sha512-VKsFsPggTA0DvnxtJdiExAucKdAnwbCCNlMM5ENvHlxubqWd0xhZcdb4XgZ7QFNhaRhilXCFxHuoObP5BNA4PA==
+
 magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
@@ -7670,6 +7675,11 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
+vue-datetime@^1.0.0-beta.14:
+  version "1.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/vue-datetime/-/vue-datetime-1.0.0-beta.14.tgz#791e724500929cdfeb31395154d9a26fd27ffb46"
+  integrity sha512-n25LqldE1xryeoweohiqlxy8iUsi+UwZnKLaN4gXjk7xxGL6rUl1y/GGvkoMwJUzRKttw+QnQV4oFAYupUQdug==
+
 vue-feather-icons@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/vue-feather-icons/-/vue-feather-icons-5.1.0.tgz#db658aca5f4c088c2f725f8b1f2967d4a1e4d398"
@@ -7892,6 +7902,11 @@ webpackbar@^4.0.0:
     std-env "^2.2.1"
     text-table "^0.2.0"
     wrap-ansi "^6.0.0"
+
+weekstart@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/weekstart/-/weekstart-1.1.0.tgz#af642eb10dc24b1af9d4dcc0415056edc087b897"
+  integrity sha512-ZO3I7c7J9nwGN1PZKZeBYAsuwWEsCOZi5T68cQoVNYrzrpp5Br0Bgi0OF4l8kH/Ez7nKfxa5mSsXjsgris3+qg==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"

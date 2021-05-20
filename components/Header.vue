@@ -20,7 +20,25 @@
               </div>
             </div>
             <div class="col-5 col-lg-3 text-right p-0 d-flex justify-content-end align-items-center">
-              <a href="./login.html" title="" class="btn registerBtn"><user-icon size="1x" class="" ></user-icon> Masuk / Daftar</a>
+              <nuxt-link  to="/login" title="" class="btn registerBtn" v-if="! $store.state.isLogin">
+                <user-icon size="1x" class="" ></user-icon> Masuk / Daftar
+              </nuxt-link>
+              <div class="dropdown d-none d-sm-block" v-else>
+                <a class="btn text-white dropdown-toggle btn-auth" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="avatar">
+                    <!-- <user-icon size="1x" class="" ></user-icon> -->
+                    <img src="@/static/img/photo-1519993796861-26556330a4a9.jpeg">
+                  </span> 
+                  <span class="text">Azmi Aziz</span>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <nuxt-link to="/account" class="dropdown-item">Akun Saya</nuxt-link>
+                  <nuxt-link to="" class="dropdown-item">Riwayat Transaksi</nuxt-link>
+                  <div class="dropdown-divider"></div>
+                  <a href="" class="dropdown-item" @click="logout"><log-out-icon size="1x" class=""></log-out-icon> Keluar</a>
+                </div>
+              </div>
               <span class="position-relative">
                 <a data-toggle="collapse" href="#panel-login" id="searchCollapse" aria-expanded="false" class="btn d-inline d-lg-none collapsed">
                     <search-icon size="1.5x" class="text-white" ></search-icon>
@@ -97,8 +115,8 @@
                         <div>Rp35.000.000</div>
                     </div>
 
-                    <a href="#" class="btn btn-warning btn-block mb-1">Lanjut ke Checkout</a>
-                    <a href="./cart.html" class="btn btn-outline-warning btn-block">Lihat Keranjang</a>
+                    <a href="#" class="btn btn-warning btn-block mb-1 w-100">Lanjut ke Checkout</a>
+                    <nuxt-link to="/cart" class="btn btn-outline-warning btn-block w-100">Lihat Keranjang</nuxt-link>
                   </div> <!--end shopping-cart -->
                 </div> <!--end container -->
             </span>
@@ -181,7 +199,7 @@
 </template>
 
 <script>
-import { SearchIcon, ShoppingCartIcon, MenuIcon, UserIcon } from 'vue-feather-icons'
+import { SearchIcon, ShoppingCartIcon, MenuIcon, UserIcon, LogOutIcon } from 'vue-feather-icons'
 
 export default {
 
@@ -191,7 +209,8 @@ export default {
     SearchIcon,
     ShoppingCartIcon,
     MenuIcon,
-    UserIcon
+    UserIcon,
+    LogOutIcon
   },
 
   mounted(){
@@ -203,6 +222,14 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    login () {
+      this.$store.commit('logout')
+      this.$nextTick(() => {
+        this.$router.push('/')
+      })
     }
   }
 

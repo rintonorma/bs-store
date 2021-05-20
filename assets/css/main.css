@@ -361,16 +361,26 @@ section{
 .rating .review-no{
   margin-left: 5px;
 }
+.btn-link {
+    font-weight: 400;
+    color: #069699;
+    text-decoration: underline;
+}
+.btn-link:hover {
+    font-weight: 400;
+    color: #067f82;
+    text-decoration: none;
+}
 .btn-facebook {
     color: #fff;
-    background-color: #3b5998;
-    border-color: #3b5998;
+    background-color: #1a77f2;
+    border-color: #1a77f2;
 }
 
 .btn-facebook:hover {
     color: #fff;
-    background-color: #28437b;
-    border-color: #28437b;
+    background-color: #0f66da;
+    border-color: #0f66da;
 }
 
 .btn-twitter {
@@ -398,15 +408,15 @@ section{
 }
 
 .btn-google {
-    color: #333;
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
+    color: #fff;
+    background-color: #1a77f2;
+    border-color: #1a77f2;
 }
 
 .btn-google:hover {
-    color: #333;
-    background-color: #fafafa;
-    border-color: #fafafa;
+    color: #fff;
+    background-color: #0f66da;
+    border-color: #0f66da;
 }
 
 .btn-share {
@@ -454,6 +464,47 @@ section{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+.btn-auth {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    color: #fff;
+}
+.btn-auth .text {
+  display: block;
+  max-width: 100px;
+  overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.inputdate{
+  padding: 5px 15px;
+  border-radius: 50px;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #069699;
+  margin-right: 10px;
+}
+.avatar img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+.dropdown-toggle::after{
+  margin-left: 10px;
 }
 /* ---------------------------------------------------
     Shopping Cart
@@ -775,7 +826,7 @@ section{
     overflow: hidden;
 }
 .mc-toolbar.sticky-top {
-    top: 70px;
+    top: 120px;
     z-index: 2;
 }
 .mc-toolbar .toolbar{
@@ -846,6 +897,10 @@ section{
 }
 
 @media only screen and (max-width: 480px) {
+  .mc-toolbar.sticky-top {
+    top: 70px;
+    z-index: 2;
+  }
   .mc-toolbar .limiter{
     display: none;
   }
@@ -1152,6 +1207,11 @@ section{
     z-index: 9999;
     display: none;
 }
+.sorting-mobile .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .sorting-inner > ul > li{
     position: relative;
@@ -1184,6 +1244,7 @@ section{
     left: 25px;
     color: #069699;
 }
+
 
 /* ---------------------------------------------------
     Slick Slider

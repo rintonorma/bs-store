@@ -161,10 +161,25 @@
                         </div>
                     </div>
                     <div class="d-grid">
-		                	<button type="button" class="btn btn-success my-3">Submit</button>
+		                	<button type="button" class="btn btn-outline-success my-3">Submit</button>
 		                </div>
                 </div>
             </aside>
+            <div class="sorting-mobile" id="sorting-mobile">
+                <div class="title">
+                    <h4 class="text-muted p-3">Urut Berdasarkan</h4>
+                    <button type="button" class="btn btn-lg text-muted" id="closeSorting"><x-icon size="2x" class=""></x-icon></button>
+                </div>
+                <div class="sorting-inner">
+                    <ul>
+                        <li><a href="" class="active">posisi</a></li>
+                        <li><a href="">terbaru</a></li>
+                        <li><a href="">abjad a - z</a></li>
+                        <li><a href="">termurah</a></li>
+                        <li><a href="">termahal</a></li>
+                    </ul>
+                </div>
+            </div>
 					</div>
 					<div class="col-12 col-lg-10">
 						<h1 class="mb-3">Mainan Anak</h1>
@@ -194,21 +209,6 @@
 	                          <option>24</option>
 	                          <option>48</option>
 	                      </select>
-	                  </div>
-	                  <div class="sorting-mobile" id="sorting-mobile">
-	                      <div class="title">
-	                          <h4 class="text-muted p-3">Urut Berdasarkan</h4>
-	                          <a href="#" class="btn btn-lg text-muted" id="closeSorting"><i class="fas fa-times"></i></a> 
-	                      </div>
-	                      <div class="sorting-inner">
-	                          <ul>
-	                              <li><a href="" class="active">posisi</a></li>
-	                              <li><a href="">terbaru</a></li>
-	                              <li><a href="">abjad a - z</a></li>
-	                              <li><a href="">termurah</a></li>
-	                              <li><a href="">termahal</a></li>
-	                          </ul>
-	                      </div>
 	                  </div>
 								</div>
               </div> <!-- end mc toolbar -->
