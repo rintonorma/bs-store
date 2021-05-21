@@ -21,12 +21,8 @@ export default {
     ],
     script: [
       { src: 'js/jquery-3.5.1.min.js' },
-      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', type: 'text/javascript' },
       { src: 'js/bootstrap.bundle.min.js' },
       { src: 'js/slick.min.js' },
-      // { src: 'js/megamenu.js' },
-      // { src: 'js/modernizr.js' },
-      // { src: 'js/jquery.menu-aim.js' },
       { src: 'js/main.js' }
     ]
   },
@@ -36,6 +32,7 @@ export default {
     '@/assets/css/main.css',
     '@/assets/css/default.scss',
     '@/assets/css/vue-datetime.css',
+    '@/assets/css/vue2-daterange-picker.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

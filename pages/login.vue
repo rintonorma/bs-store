@@ -54,7 +54,7 @@ export default {
   	login () {
   		this.$store.commit('login')
   		this.$nextTick(() => {
-  			this.$router.push('/')
+  			this.$router.push('/account')
   		})
   	}
   }

@@ -8,109 +8,70 @@
 					</div>
 				</div>
 				<div class="main-wrapper">
-	          <div class="sidebar">
-	              <div class="card h-100">
-	                  <div class="nav-side-menu">
-	                      <div class="menu-bar">
-	                          <div class="brand">
-	                              <div class="section-profile">
-	                                  <img src="assets/img/avatar.png" alt="" class="rounded-circle">
-	                                  <div>
-	                                      <h5>SASHA SANTIKA</h5>
-	                                      <small class="text-muted">Member ID 000023841</small>
-	                                  </div>
-	                              </div>
-	                          </div>
-	                          <i class="fas fa-bars toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-	                      </div>
-	                      <div class="menu-list">
-	                          <ul id="menu-content" class="menu-content collapse out">
-	                              <li>
-	                                  <a href="./membership.html">
-	                                      <div class="section-membership">
-	                                          <div class="progress mb-2" style="height: 5px;">
-	                                              <div class="progress-bar bg-pink" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-	                                          </div>
-	                                          <div class="desc">Next tier: Lifetime Silver Elite </div>
-	                                      </div>
-	                                  </a>
-	                              </li>
-	                              <li class="active">
-	                                  <a href="./index.html">
-	                                      <img src="assets/img/icon/icon-dashboard.png" width="28px" class="mr-3"> Dashboard
-	                                  </a>
-	                              </li>
-	                              <li>
-	                                  <a href="./membership.html">
-	                                      <img src="assets/img/icon/icon-membership.png" width="28px" class="mr-3"> Membership
-	                                  </a>
-	                              </li>
-	                              <li>
-	                                  <a href="./subscription.html">
-	                                      <img src="assets/img/icon/icon-marketing.png" width="28px" class="mr-3"> Subscription
-	                                  </a>
-	                              </li>
-	                              <li>
-	                                  <a href="./transaction.html">
-	                                      <img src="assets/img/icon/icon-receipt.png" width="28px" class="mr-3"> Transaction
-	                                  </a>
-	                              </li>
-	                              <li>
-	                                  <a href="./settings.html">
-	                                      <img src="assets/img/icon/icon-settings.png" width="28px" class="mr-3"> Settings
-	                                  </a>
-	                              </li>
-	                              <li>
-	                                  <a href="#" class="text-danger">
-	                                      <img src="assets/img/icon/icon-logout.png" width="28px" class="mr-3"> Logout
-	                                  </a>
-	                              </li>
-	                          </ul>
-	                      </div>
-	                  </div>
-	              </div>
-	          </div>
-	          <div class="main-content">
-	              <div class="banner-slider">
-	                  <div><img src="assets/img/banner/banner-1.png"></div>
-	                  <div><img src="assets/img/banner/banner-1.png"></div>
-	                  <div><img src="assets/img/banner/banner-1.png"></div>
-	              </div>
-	              <div class="reward-section">
-	                  <h5 class="mb-3">Reedem Your Reward</h5>
-	                  <div class="reward-slider">
-	                      <div>
-	                          <a href="./voucher-details.html">
-	                              <img src="assets/img/rewards/rewards-1.png" class="mb-2">
-	                              <div class="title">Voucher Pulang Pulang Glowing</div>
-	                              <div class="desc">Berlaku Maret - April 2020</div>
-	                          </a>
-	                      </div>
-	                      <div>
-	                          <a href="./voucher-details.html">
-	                              <img src="assets/img/rewards/rewards-2.png" class="mb-2">
-	                              <div class="title">Voucher Paket Slimming</div>
-	                              <div class="desc">Berlaku Sampai Juni 2020</div>
-	                          </a>
-	                      </div>
-	                      <div>
-	                          <a href="./voucher-details.html">
-	                              <img src="assets/img/rewards/rewards-3.png" class="mb-2">
-	                              <div class="title">Voucher Suntikan Penghancur Lemak Wajah</div>
-	                              <div class="desc">Berlaku Sampai Juni 2020</div>
-	                          </a>
-	                      </div>
-	                      <div>
-	                          <a href="./voucher-details.html">
-	                              <img src="assets/img/rewards/rewards-1.png" class="mb-2">
-	                              <div class="title">Voucher Pulang Pulang Glowing</div>
-	                              <div class="desc">Berlaku Maret - April 2020</div>
-	                          </a>
-	                      </div>
-	                  </div>
-	              </div>
-	          </div>
-	      </div>
+						<SidebarNav class="sidebar"></SidebarNav>
+						<div class="main-content">
+								<h3 class="mb-3">Data Pribadi</h3>
+								<div class="mc-section">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <p class="text-secondary">Ubah Foto Profil</p>
+                            <div class="upload-avatar mb-3">
+                                <div class="upload-avatar-img">
+                                    <img id="imageResult" src="">
+                                </div>
+                                <input for="upload" id="upload" type="file" onchange="readURL(this);" class="btn btn-outline-secondary btn-block my-3"></input>
+                                <small class="text-secondary">Besar file: maksimum 10.000.000 bytes (10 Megabytes)<br>Ekstensi file yang diperbolehkan: .JPG .JPEG .PNG</small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <form>
+                                <p class="text-secondary">Ubah Biodata Diri</p>
+                                <div class="form-group">
+                                    <label class="mb-1">Nama Depan</label>
+                                    <input type="text" class="form-control" id="firstname">
+                                </div>
+                                <div class="form-group">
+                                    <label class="mb-1">Nama Belakang</label>
+                                    <input type="text" class="form-control" id="lastname">
+                                </div>
+                                <div class="form-group">
+                                    <label class="mb-1">Email</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="email" placeholder="" value="sarahsahen@gmail.com">
+                                      	<span class="label-status"><check-icon size="1.5x" class=""></check-icon></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="mb-1">Telepon</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="phone" value="081234567890">
+                                        <button type="button" class="btn btn-success">verifikasi</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="mb-1">Jenis Kelamin</label>
+                                    <div class="input-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genderMale" value="option1" checked>
+                                            <label class="form-check-label" for="genderMale">Laki-laki</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="option2">
+                                            <label class="form-check-label" for="genderFemale">Perempuan</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="mb-1">Tanggal Lahir</label>
+                                    <datetime v-model="date" input-class="form-control"></datetime>
+                                </div>                                
+                                <a href="#" class="btn btn-warning btn-lg w-100">Simpan</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+						</div>
+				</div>
 			</div>
 		</section>
 		<MobileNav></MobileNav>
@@ -118,49 +79,30 @@
 </template>
 
 <script>
+import { CheckIcon } from 'vue-feather-icons'
+import { Datetime } from 'vue-datetime'
+import SidebarNav from '../components/SidebarNav.vue'
+
 export default {
 
-  name: 'account',
+	name: 'account',
 
-  data () {
+	components: {
+    CheckIcon,
+    datetime: Datetime,
+    SidebarNav
+  },
+
+	data () {
 		return {
 
 		}
-  }
+	}
 }
 </script>
 
 <style lang="scss" scoped>
-.main-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -15px;
 
-  .sidebar {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-	}
-
-	.main-content {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 30px;
-	}
-}
 </style>
 
 

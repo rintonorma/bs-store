@@ -16,6 +16,7 @@
     "core-js": "^3.9.1",
     "jquery": "^3.6.0",
     "luxon": "^1.27.0",
+    "moment": "^2.29.1",
     "nuxt": "^2.15.3",
     "popper.js": "^1.16.1",
     "sass": "^1.32.12",
@@ -24,6 +25,8 @@
     "vue-feather-icons": "^5.1.0",
     "vue-popperjs": "^2.3.0",
     "vue-slick-carousel": "^1.0.6",
+    "vue-time-date-range-picker": "^1.2.3",
+    "vue2-daterange-picker": "^0.6.5",
     "weekstart": "^1.1.0"
   },
   "devDependencies": {}

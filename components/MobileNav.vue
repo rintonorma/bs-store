@@ -5,7 +5,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-6">
-						<nuxt-link to="/" title="" id="homeLink" class="botNav active"><home-icon size="1x" class=""></home-icon> <span>Beranda</span></nuxt-link>
+						<nuxt-link to="/" title="" id="homeLink" class="botNav"><home-icon size="1x" class=""></home-icon> <span>Beranda</span></nuxt-link>
 					</div>
 					<div class="col-6">
 						<nuxt-link to="/account" title="" id="accountLink" class="botNav"><user-icon size="1x" class=""></user-icon> <span>Akun</span></nuxt-link>
@@ -30,13 +30,11 @@ export default {
   },
 
   mounted (){
-		$('#homeLink').on("click", function(event){
-			event.preventDefault();
+		$('#homeLink').on("click", function(){
 			$('#homeLink').addClass('active');
 			$('#accountLink').removeClass('active');
 		});
-		$('#accountLink').on("click", function(event){
-			event.preventDefault();
+		$('#accountLink').on("click", function(){
 			$('#accountLink').addClass('active');
 			$('#homeLink').removeClass('active');
 		});
@@ -50,5 +48,5 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 </style>

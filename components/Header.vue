@@ -20,7 +20,7 @@
               </div>
             </div>
             <div class="col-5 col-lg-3 text-right p-0 d-flex justify-content-end align-items-center">
-              <nuxt-link  to="/login" title="" class="btn registerBtn" v-if="! $store.state.isLogin">
+              <nuxt-link to="/login" title="" class="btn registerBtn" v-if="! $store.state.isLogin">
                 <user-icon size="1x" class="" ></user-icon> Masuk / Daftar
               </nuxt-link>
               <div class="dropdown d-none d-sm-block" v-else>
@@ -34,7 +34,7 @@
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <nuxt-link to="/account" class="dropdown-item">Akun Saya</nuxt-link>
-                  <nuxt-link to="" class="dropdown-item">Riwayat Transaksi</nuxt-link>
+                  <nuxt-link to="/transaction" class="dropdown-item">Riwayat Transaksi</nuxt-link>
                   <div class="dropdown-divider"></div>
                   <a href="" class="dropdown-item" @click="logout"><log-out-icon size="1x" class=""></log-out-icon> Keluar</a>
                 </div>
