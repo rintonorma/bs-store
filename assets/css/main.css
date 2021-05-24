@@ -122,9 +122,9 @@ section{
   background-color: #069699;
   border-color: #069699;
 }
-.text-success {
+/*.text-success {
   color: #069699!important;
-}
+}*/
 .text-warning {
   color: #ff5601!important;
 }
@@ -897,7 +897,7 @@ section{
     align-items: flex-start;
   }
   .product-item-nav li:after{
-    
+
   }
 }
 /* ---------------------------------------------------
@@ -1496,7 +1496,7 @@ section{
     border:none;
 }
 
-.widget_list > ul > li.active{
+.widget_list > ul > li.active a{
     color: #069699;
 }
 

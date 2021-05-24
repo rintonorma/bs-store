@@ -7,7 +7,7 @@
         <div class="container">
           <div class="w-100 d-flex align-items-center justify-content-between">
             <div class="col-7 col-lg-3 text-left p-0">
-              <a href="#" title="">
+              <a href="/" title="">
                 <img src="@/static/img/logo/logo2.png" alt="Baby Shop | Toko Online Susu, Mainan Anak, Baju Bayi, Perlengkapan Bayi" class="logo">
               </a>
             </div>
