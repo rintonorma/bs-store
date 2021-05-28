@@ -8,7 +8,7 @@ export default {
   head: {
     title: 'Baby Shop | Toko Online Susu, Mainan Anak, Baju Bayi, Perlengkapan Bayi',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'id'
     },
     meta: [
       { charset: 'utf-8' },
