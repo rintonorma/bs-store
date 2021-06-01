@@ -94,8 +94,8 @@
 								</h5>
 							</div>
 							<div class="d-grid gap-2">
-								<a href="./shipping.html" class="btn btn-warning btn-block">Lanjut ke Checkout</a>
-								<a href="./login.html" class="btn btn-light btn-block">Login atau Registrasi</a>
+								<a href="/delivery" class="btn btn-warning btn-block">Lanjut ke Checkout</a>
+								<a href="/login" class="btn btn-light btn-block">Login atau Registrasi</a>
 							</div>
 						</div>
 					</div>
